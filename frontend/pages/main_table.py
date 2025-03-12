@@ -38,7 +38,7 @@ class CustomTooltip {
         console.log(params);
         this.eGui = document.createElement('div');
         this.eGui.style.cssText = 'background: black; color: white; padding: 5px; border-radius: 5px';
-        this.eGui.innerText = params.value;
+        this.eGui.innerText = JSON.stringify(params.value);
     }
     getGui() {
         return this.eGui;
